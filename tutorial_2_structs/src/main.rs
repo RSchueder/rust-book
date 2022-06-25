@@ -117,7 +117,6 @@ fn main() {
     let area = rectangle.area();
     println!("{}", area);
 
-
     // memory is dealocated/consumed inside dbg! macro. Turns out println! is just a secial case where this does not happen
     // https://www.reddit.com/r/rust/comments/axgfjo/ownership_rules_when_calling_println_macro/
     // wouldn't happen for a variable on the stack  

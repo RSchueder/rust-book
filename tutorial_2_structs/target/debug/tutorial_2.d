@@ -1,1 +1,1 @@
-/Users/rudy/projects/rust/tutorial_2/target/debug/tutorial_2: /Users/rudy/projects/rust/tutorial_2/src/main.rs
+/home/rudys/projects/rust-book/tutorial_2_structs/target/debug/tutorial_2: /home/rudys/projects/rust-book/tutorial_2_structs/src/main.rs
