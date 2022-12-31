@@ -31,7 +31,7 @@ impl Rectangle {
         self.width * self.height
     }
     fn area_dealoc(self) -> u32 {
-        // imutable borrow
+        // mutable borrow
         // if it were not a borrow, the method would take ownership of self and self would be deallocated after execution of the method
         // basically, if a variable enters a function, and it is not returned back by the function, then it dies in the function
         self.width * self.height
@@ -117,7 +117,7 @@ fn main() {
     let area = rectangle.area();
     println!("{}", area);
 
-    // memory is dealocated/consumed inside dbg! macro. Turns out println! is just a secial case where this does not happen
+    // memory is dealocated/consumed inside dbg! macro. Turns out println! is just a special case where this does not happen
     // https://www.reddit.com/r/rust/comments/axgfjo/ownership_rules_when_calling_println_macro/
     // wouldn't happen for a variable on the stack  
     dbg!(rectangle);
