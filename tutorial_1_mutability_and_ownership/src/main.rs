@@ -33,7 +33,7 @@ fn main() {
     println!("{}", length);
     augment(&mut str4);
 
-    // cannot have ?1 mutable references
+    // cannot have >1 mutable references
     // let r1 = &mut s
     // let r2 = &mut s
 
